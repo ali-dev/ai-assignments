@@ -25,6 +25,4 @@ To run the chatbot:
 - go back to the root of the project and run `streamlit run chatbot.py`
 
 
-<video src="https://github.com/ali-dev/ai-assignments/blob/main/project1/chatbot.mp4" width="300" />
-
-
+Check out chatbot.mp4 
