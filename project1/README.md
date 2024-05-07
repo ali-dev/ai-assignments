@@ -1,5 +1,5 @@
 ## About this project
-This is a chatbot that is built around an AI agent that is able to provide COokunity customers with general support (help desk), as well as meal recommendations. In the future, this agent will have other tools, that could integrate with other sources of data, ex: a `delivery_status` tool.
+This is a chatbot that is built around an AI agent that is able to provide Cookunity customers with general support (help desk), as well as meal recommendations. In the future, this agent will have other tools, that could integrate with other sources of data, ex: a `delivery_status` tool.
 
 
 ## The Tech
@@ -24,5 +24,7 @@ Disclaimer: this part of the project could use some more attention, like creatin
 To run the chatbot:
 - go back to the root of the project and run `streamlit run chatbot.py`
 
+
+<video src="chatbot.mp4" width="300" />
 
 
