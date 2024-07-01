@@ -136,27 +136,17 @@ def generate_recipe_photo(recipe_name: str, ingredients: str, instructions: str)
         quality="standard",
         # response_format="b64_json",
     )
-    new_file_name = f"recipe.json"
-    # masked = np.array(response)
- 
+    
     if response.data:
         image_data = response.data[0].url  # Modify this line based on actual structure
         print("Image URL:", image_data)
 
     
-    new_file_name = "recipe.json"
-    with open(new_file_name, "w") as file:
-        json.dump(response.data[0].url, file)  # Adjust the data extraction based on the actual response structure
-
-
     img_data = requests.get(response.data[0].url).content
     with open('recipe_photo.jpg', 'wb') as handler:
         handler.write(img_data)
-    # # print(response["data"][0]["b64_json"])
-    # with open("./" + new_file_name, mode="w", encoding="utf-8") as file:
-    #     json.dump(response, file)
     
-    return new_file_name
+    return img_data
 
 
 @tool
